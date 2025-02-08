@@ -506,3 +506,100 @@ a {
   width: 470px;
   height: 440px;
 }
+
+/* ==================== BLOG ========================== */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #fffcf4;
+}
+
+.blogs .blog-top {
+  text-align: center;
+}
+
+.blogs .blog-top .desc {
+  color: #696262;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  width: 440px;
+  margin: 16px auto 0;
+}
+
+.blogs .blog-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+
+.blogs .item {
+  width: 33.33%;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.blogs .item:hover {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blogs .item .thumb {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  height: 250px;
+  object-fit: cover;
+}
+
+.blogs .item .info {
+  padding: 28px 20px 28px;
+}
+
+.blogs .item .date {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.blogs .item .date::before {
+  content: "";
+  margin-right: 4px;
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.blogs .item .date::after {
+  left: 0;
+  bottom: 0;
+  /*  gạch chân sẽ kéo dài theo chữ và dài hơn 1 đoạn = right /
+   nhớ áp display inline-flex  */
+  right: -27px;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+
+.blogs .item .title {
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  margin-top: 12px;
+}
+
+.blogs .item .btn {
+  margin-top: 12px;
+}
+.blogs .item .btn:hover {
+  background: var(--primary-color);
+}
