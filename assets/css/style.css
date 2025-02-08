@@ -378,8 +378,15 @@ a {
   background: #2e2100;
 }
 
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
 .feedback-item {
   display: flex;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -419,16 +426,14 @@ a {
   background: #634700;
 }
 
-/* .feedback-item .dot.active {
-  background: var(--primary-color);
-} */
-
-.feedback-item .dot:hover{
+.feedback-item .dot.active {
   background: var(--primary-color);
 }
+
 .feedback-item .content {
   width: 66%;
   margin-left: auto;
+  display: block;
 }
 
 .feedback-item blockquote {
